@@ -4,12 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+    body{
+        background: radial-gradient(circle, hsl(48, 2%, 59%), #838683, rgb(108, 102, 102));; 
+        display: flex;
+        justify-content: center;
+        display: grid;
+        align-items: center;
+    }
+
+    #buttn{
+        background-color: rgb(101, 92, 92);
+        color: aliceblue;
+    }
+</style>
 </head>
 <body>
-    
     <input type="text" id="username" placeholder="Enter GitHub username">
+    
     <button onclick="fetchUser()" id="buttn">Get User</button>
-
+    <br>
     <div id="profile"></div>
 
     <script>
